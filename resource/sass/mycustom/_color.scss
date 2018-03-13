@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+$background: #000022;
+// $background: #212121;
+
+$maincolor: #eb6ea0;
+$subcolor: #043c78;
+
+
+
+/*         background        */
+
+@mixin mybase-color {
+    background: $background;
+    color: $maincolor;
+}
+@mixin my-font-en {
+        font-family: 'Tangerine', cursive;
+        letter-spacing: 0.1em;
+}
+
+/*        nav        */
+
+//link
+@mixin maincolor {
+    color: $maincolor;
+}
+@mixin subcolor {
+    color: $msubcolor;
+}
+
+//link:hober
+@mixin main-hover {
+    color: darken($maincolor, 30%);
+}
+
+
+/*        top-contents        */
+@mixin top-contents-title {
+        border-top: 1px dotted $subcolor;
+        border-bottom: 1px dotted $subcolor;
+}
+
+@mixin top-contents-btn {
+    color: $maincolor;
+    background-color: $background;
+    border: 1px solid $subcolor;
+}
+
+@mixin top-contents-btn-hover {
+    color: darken($maincolor, 30%);
+    background-color: $subcolor;
+    border: 1px solid $maincolor;
+}
+
+/*        pagetop-btn        */
+@mixin pagetop-btn {
+    color: $maincolor;
+    background-color: $background;
+    border: 1px solid $subcolor;
+}
+@mixin pagetop-btn-hover {
+    color: darken($maincolor, 30%);
+    background-color: $subcolor;
+    border: 1px solid $maincolor;
+}
+
+/*        top-custom-mail        */
+@mixin pagetop-btn {
+    color: $maincolor;
+    background-color: $background;
+    border: 1px solid $subcolor;
+}
+@mixin pagetop-btn-hover {
+    color: darken($maincolor, 30%);
+    background-color: $subcolor;
+    border: 1px solid $maincolor;
+}
+
+/*        breadcrumb        */
+@mixin breadcrumb-color {
+    color: $maincolor;
+    background-color: $background;
+    border: 1px solid $subcolor;
+}
+
+@mixin breadcrumb-btn {
+    color: $maincolor;
+    background-color: $background;
+}
+@mixin breadcrumb-btn-active {
+    color: darken($maincolor, 30%);
+}
+@mixin breadcrumb-btn-hover {
+    color: darken($maincolor, 30%);
+}
+
